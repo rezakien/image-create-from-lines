@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  app:
+    build:
+      context: .
+    command: python app.py
+networks:
+  default:
+    external:
+      name: image-create-from-lines
